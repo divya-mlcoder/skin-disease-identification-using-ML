@@ -18,17 +18,17 @@ Now a day’s people are suffering from skin diseases, More than 125 million peo
 # THEORETICAL ANALYSIS  
 The present study investigates the best strategy for aiding in the diagnosis of the presence or absence of melanoma through skin imaging. In the proposed strategy, what differentiates it from other methods of texture analysis is the inclusion of RGB components, adding texture information to the key points.
 The developed strategy involves the following steps: 
-1.Random selection of a set of images with melanoma  
-2.Generation of key points containing:
+1. Random selection of a set of images with melanoma  
+2. Generation of key points containing:
 a. first order statistics information; 
 b. second order statistics parameters
 c. RGB component information.
-3.Extraction of characteristics from all training images. 4.Classification phase with the modelling using the training database.
-5.Application of the selected model to a test image database.
-6.Result of the model applied to the test database.
+3. Extraction of characteristics from all training images. 4.Classification phase with the modelling using the training database.
+5. Application of the selected model to a test image database.
+6. Result of the model applied to the test database.
 
 In addition, the algorithm used to read the key points does not depend on the image position, when capturing information in the region of interest—ROI.
- The block diagram in Figure3shows the proposed strategy.
+
  
 All data sets used are available in the Skin Lesion Analysis Towards Melanoma-International Skin Imaging Collaboration (ISIC). 
 
@@ -36,14 +36,14 @@ The data base was formed by 2000jpeg skin images, selected at random. The learni
 In the testing process, the remaining 25% of the images in the database were used, making a total of 5000 samples in the testing phase. Each sample had a dimension of 6 pixels × 6pixels.
 To increase the efficiency in extracting characteristics for differentiation of the tissues, it was necessary to add parameters as first and second order statistics into key points, such as—mean, variance, kurtosis, skewness, contrast, correlation, entropy, energy, maximum and minimum value, as well as RGB components.
 After extracting the characteristics of the images, modelling was performed through training the database, using the best-known classifiers and their variations, as found in the academic literature:
-●Stochastic Gradient Classifier. The basic idea of this classifier method is straight forward—iteratively adjust the parameters θ in the direction where the gradient of the cost function is large and negative. In this way, the training procedure ensures the parameters flow towards a local minimum of the cost function.
-●Naïve Bayes Classifier. A Naive Bayes classifier is a simple probabilistic classifier based on applying Bayes’ theorem (from Bayesian statistics) with strong (naive)independence assumptions. This classifier is among those common learning methods grouped by similarities which makes use of Bayes’ theorem of probability to build ML models, especially those related to disease prediction and document classification.
-●Decision Tree Classifier. A decision tree is a decision support tool that uses a tree-like graph and its possible results. It is a way to display the algorithm.
-●Random Forest Classifier. Random forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time. 
-●As a result, the classes (classification) or average forecast(regression) of these individually generated trees are grouped. This method aims at averaging many approximately unbiased but noisy trees too be train low variances results. Is a collection of decision stress, which, together, forms a forest. 
-●KNN Classifier. Classification is achieved by identifying the nearest neighbours to a query example and using those neighbours to determine the class of the query.
-●Support Vector Machine Classifier. The objective of the SVM classifier is to find the hyper plane that separates the points of classes C1andC2 with a maximum margin, linearly penalizing points within the margin through a regularization parameter selected by the user. Support vector machines bring a new option to the pattern recognition problem with clear connections in statistical learning theory. They differ radically from other methods, for example, neural networks—the training of an SVM always finds a global minimum and its simple geometric interpretation provides much scope for deeper investigations.
-●Model Logistic Regression Classifier. Logistic regression classifies by using the log-ratios between the probability of groups given the data. For the groups g1 andg2:
+● Stochastic Gradient Classifier. The basic idea of this classifier method is straight forward—iteratively adjust the parameters θ in the direction where the gradient of the cost function is large and negative. In this way, the training procedure ensures the parameters flow towards a local minimum of the cost function.
+● Naïve Bayes Classifier. A Naive Bayes classifier is a simple probabilistic classifier based on applying Bayes’ theorem (from Bayesian statistics) with strong (naive)independence assumptions. This classifier is among those common learning methods grouped by similarities which makes use of Bayes’ theorem of probability to build ML models, especially those related to disease prediction and document classification.
+● Decision Tree Classifier. A decision tree is a decision support tool that uses a tree-like graph and its possible results. It is a way to display the algorithm.
+● Random Forest Classifier. Random forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time. 
+● As a result, the classes (classification) or average forecast(regression) of these individually generated trees are grouped. This method aims at averaging many approximately unbiased but noisy trees too be train low variances results. Is a collection of decision stress, which, together, forms a forest. 
+● KNN Classifier. Classification is achieved by identifying the nearest neighbours to a query example and using those neighbours to determine the class of the query.
+● Support Vector Machine Classifier. The objective of the SVM classifier is to find the hyper plane that separates the points of classes C1andC2 with a maximum margin, linearly penalizing points within the margin through a regularization parameter selected by the user. Support vector machines bring a new option to the pattern recognition problem with clear connections in statistical learning theory. They differ radically from other methods, for example, neural networks—the training of an SVM always finds a global minimum and its simple geometric interpretation provides much scope for deeper investigations.
+● Model Logistic Regression Classifier. Logistic regression classifies by using the log-ratios between the probability of groups given the data. For the groups g1 andg2:
 P(G = g1 X =x)/P(G = g2.X =x)= β0=+x βx=0
 
 
@@ -52,12 +52,12 @@ The decision boundary is the value where the probability of the group given the 
 L(β)=     logPgi(xβ).
 
 # Software Designing  
-●Jupyter Notebook Environment
-●Spyder Ide
-●Machine Learning Algorithms
-●Python (pandas, numpy, matplotlib, seaborn,sklearn)
-●HTML
-●Flask
+● Jupyter Notebook Environment
+● Spyder Ide
+● Machine Learning Algorithms
+● Python (pandas, numpy, matplotlib, seaborn,sklearn)
+● HTML
+● Flask
 We developed this loan status prediction by using the Python language which is a interpreted and high level programming language and usng the Machine Learning algorithms. 
 for coding we used the Jupyter Notebook environment of the Anaconda distributions and the Spyder, it is an integrated scientiﬁc programming in the python language.
 For creating an user interface for the prediction we used the Flask. It is a micro web framework written in Python. It is classiﬁed as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions, and a scripting language to create a webpage is HTML by creating the templates to use in the functions of the Flask and HTML.
@@ -97,24 +97,24 @@ The detection rate of diseases is very high 100%.
 
 # Advantages: 
  
-●Acute prediction of diseases available first on hand to every citizen   who   uses   this application,
-●Disease   Analysis   possible right from home, sparing the need to visit Hospitals Nursing homes or health centres. 
-●Statistics on intensity, severity of the disease, past records and present records of others affected by similar disease presented in user interactive formats. 
-●The system also makes use of geo-location access, through which it becomes easy to identify whether a particular disease has become epidemic with respect to that particular location Awareness, Suggestions and first aid tips for every disease for quick user reference. 
-●Diseases, when identified quicker can be averted or cured much easier. Eases the jobs for   Government   Healthcare   bodies, Corporation   Health officials etc.
+● Acute prediction of diseases available first on hand to every citizen   who   uses   this application,
+● Disease   Analysis   possible right from home, sparing the need to visit Hospitals Nursing homes or health centres. 
+● Statistics on intensity, severity of the disease, past records and present records of others affected by similar disease presented in user interactive formats. 
+● The system also makes use of geo-location access, through which it becomes easy to identify whether a particular disease has become epidemic with respect to that particular location Awareness, Suggestions and first aid tips for every disease for quick user reference. 
+● Diseases, when identified quicker can be averted or cured much easier. Eases the jobs for   Government   Healthcare   bodies, Corporation   Health officials etc.
  
 # Disadvantages:  
-Needs more than a single image for the prediction.
-●They use to need a lot of training data.
+Needs more than a single image for the prediction.
+● They use to need a lot of training data.
 ● Need to upload new skin diseases datasets frequently
  
 
 # APPLICATIONS 
  
-●It is used by the people having busy schedule and cannot visit hospital at starting period of skin disease.
-●It is used by the people to pre-confirm the type of diseases.
-●As it reduces the cost, if a person has any money problem these can manage by this.    
-●If a person unable to consult doctor or come out of house (like covid-19)
+● It is used by the people having busy schedule and cannot visit hospital at starting period of skin disease.
+● It is used by the people to pre-confirm the type of diseases.
+● As it reduces the cost, if a person has any money problem these can manage by this.    
+● If a person unable to consult doctor or come out of house (like covid-19)
 
 # CONCLUSION  
 
@@ -128,18 +128,18 @@ Just because you have still got a list of things to do does not mean it is not d
 
 # BIBLIOGRAPHY  
 
-●Arifin, S., Kibria, G., Firoze, A., Amini, A., & Yan, H. (2012) “Dermatological Disease Diagnosis UsingColor-Skin Images.” Xian:
-●International Conference on Machine Learning and Cybernetics.
-●Yasir,R.,Rahman, A.,&Ahmed, N.(2014)“Dermatological Disease  Detection using Image Processing  and Artificial Neural Network.
-●“Dhaka: International Conference on Electrical and Computer Engineering.
-●Santy, A., & Joseph, R. (2015) “Segmentation Methods for Computer Aided Melanoma Detection.” Global Conference on Communication Technologies.
-●Zeljkovic, V., Druzgalski, C., Bojic-Minic, S., Tameze, C., & Mayorga, P. (2015) “ Supplemental Melanoma Diagnosis for Darker Skin Complexion Gradients.” Pan American Health Care Exchanges
-●Suganya R. (2016) “An Automated Computer Aided Diagnosis of Skin Lesions Detection and Classification for Dermoscopy Images.”
-●International Conference on Recent Trends in Information Technology.
-●Alarm, N., Munia, T., Tavakolian, K., Vasefi, V., MacKinnon, N., & Fazel-Rezai, R. (2016) “Automatic Detection and Severity
-●Measurement of Eczema Using Image Processing.” IEEE.
-●Kumar,V.,Kumar, S.,&Saboo,V.(2016)“DermatologicalDiseaseDetectionUsingImageProcessingandMachineLearning.”IEEE.
-●Krizhevsky, A., ILYA, S., & Geoffrey, E. (2012) “ImageNet Classification with Deep Convolutional Neural Networks.” Advances in Neural Information Processing Systems.
+● Arifin, S., Kibria, G., Firoze, A., Amini, A., & Yan, H. (2012) “Dermatological Disease Diagnosis UsingColor-Skin Images.” Xian:
+● International Conference on Machine Learning and Cybernetics.
+● Yasir,R.,Rahman, A.,&Ahmed, N.(2014)“Dermatological Disease  Detection using Image Processing  and Artificial Neural Network.
+● “Dhaka: International Conference on Electrical and Computer Engineering.
+● Santy, A., & Joseph, R. (2015) “Segmentation Methods for Computer Aided Melanoma Detection.” Global Conference on Communication Technologies.
+● Zeljkovic, V., Druzgalski, C., Bojic-Minic, S., Tameze, C., & Mayorga, P. (2015) “ Supplemental Melanoma Diagnosis for Darker Skin Complexion Gradients.” Pan American Health Care Exchanges
+● Suganya R. (2016) “An Automated Computer Aided Diagnosis of Skin Lesions Detection and Classification for Dermoscopy Images.”
+● International Conference on Recent Trends in Information Technology.
+● Alarm, N., Munia, T., Tavakolian, K., Vasefi, V., MacKinnon, N., & Fazel-Rezai, R. (2016) “Automatic Detection and Severity
+● Measurement of Eczema Using Image Processing.” IEEE.
+● Kumar,V.,Kumar, S.,&Saboo,V.(2016)“DermatologicalDiseaseDetectionUsingImageProcessingandMachineLearning.”IEEE.
+● Krizhevsky, A., ILYA, S., & Geoffrey, E. (2012) “ImageNet Classification with Deep Convolutional Neural Networks.” Advances in Neural Information Processing Systems.
 
-# 
+
  
